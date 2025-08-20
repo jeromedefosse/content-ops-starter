@@ -18,6 +18,8 @@ Suivi des patients RAAC (Oxford, WOMAC, Douleur VAS, Qualité de vie VAS, Satisf
    ```
 2. **Build**
    - `node scripts/verify-env.mjs && npm run build`
+4. **Développement local**
+   - `npm run dev`
 3. **Fonctions planifiées** (déjà déclarées dans `netlify.toml`)
    - `send-reminders` : `0 5 * * *`
    - `surgeon-sync` : `0 2 1 * *`
