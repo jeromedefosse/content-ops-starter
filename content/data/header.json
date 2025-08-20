@@ -1,94 +1,128 @@
 {
-    "logo": {
-        "url": "/images/logo-dark.svg",
-        "altText": "Logo dark",
-        "styles": {
-            "self": {
-                "margin": ["mr-3"]
-            }
-        },
-        "type": "ImageBlock"
+  "logo": {
+    "url": "https://polyclinique-cotebasquesud.fr/wp-content/uploads/2022/07/POLYCLINIQUE-COTE-BASQUE-SUD-ICONE.png",
+    "altText": "Polyclinique Côte Basque Sud logo",
+    "styles": {
+      "self": {
+        "margin": [
+          "mr-3"
+        ]
+      }
     },
-    "primaryLinks": [
+    "type": "ImageBlock"
+  },
+  "primaryLinks": [
+    {
+      "label": "Pricing",
+      "url": "/pricing",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "Blog",
+      "altText": "Blog",
+      "url": "/blog",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "Careers",
+      "altText": "Careers page",
+      "url": "/careers",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "Dropdown",
+      "altText": "Dropdown",
+      "links": [
         {
-            "label": "Pricing",
-            "url": "/pricing",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
+          "label": "Dropdown item",
+          "url": "/",
+          "icon": "arrowRight",
+          "iconPosition": "right",
+          "style": "secondary",
+          "type": "Link"
         },
         {
-            "label": "Blog",
-            "altText": "Blog",
-            "url": "/blog",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
+          "label": "Dropdown item",
+          "url": "/",
+          "icon": "arrowRight",
+          "iconPosition": "right",
+          "style": "secondary",
+          "type": "Link"
         },
         {
-            "label": "Careers",
-            "altText": "Careers page",
-            "url": "/careers",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Link"
-        },
-        {
-            "label": "Dropdown",
-            "altText": "Dropdown",
-            "links": [
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                },
-                {
-                    "label": "Dropdown item",
-                    "url": "/",
-                    "icon": "arrowRight",
-                    "iconPosition": "right",
-                    "style": "secondary",
-                    "type": "Link"
-                }
-            ],
-            "labelStyle": "secondary",
-            "type": "SubNav"
+          "label": "Dropdown item",
+          "url": "/",
+          "icon": "arrowRight",
+          "iconPosition": "right",
+          "style": "secondary",
+          "type": "Link"
         }
-    ],
-    "secondaryLinks": [
-        {
-            "label": "Sign up",
-            "altText": "Sign up",
-            "url": "https://app.netlify.com/signup",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "type": "Button"
-        },
-        {
-            "label": "Log in",
-            "url": "/",
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "primary",
-            "type": "Button"
-        }
-    ],
-    "variant": "logo-left-primary-nav-centered",
-    "colors": "bg-light-fg-dark",
-    "type": "Header"
+      ],
+      "labelStyle": "secondary",
+      "type": "SubNav"
+    },
+    {
+      "label": "Patients",
+      "url": "/patients",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "Chirurgiens",
+      "url": "/chirurgiens",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "Admin",
+      "url": "/admin",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
+      "label": "RAAC",
+      "url": "/raac",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    }
+  ],
+  "secondaryLinks": [
+    {
+      "label": "Sign up",
+      "altText": "Sign up",
+      "url": "https://app.netlify.com/signup",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Button"
+    },
+    {
+      "label": "Log in",
+      "url": "/",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "primary",
+      "type": "Button"
+    }
+  ],
+  "variant": "logo-left-primary-nav-centered",
+  "colors": "bg-light-fg-dark",
+  "type": "Header"
 }
