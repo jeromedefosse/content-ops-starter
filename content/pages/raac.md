@@ -9,6 +9,29 @@ sections:
       type: TitleBlock
     text: >-
       La RAAC vise à optimiser la récupération du patient après une intervention chirurgicale.
+    actions:
+      - label: Espace Patients
+        url: /patients
+        style: primary
+        icon: arrowRight
+        iconPosition: right
+        type: Button
+      - label: Espace Chirurgiens
+        url: /chirurgiens
+        style: primary
+        icon: arrowRight
+        iconPosition: right
+        type: Button
+      - label: Espace Administration
+        url: /admin
+        style: primary
+        icon: arrowRight
+        iconPosition: right
+        type: Button
+    media:
+      url: /images/main-hero.jpg
+      altText: Illustration RAAC
+      type: ImageBlock
   - type: GenericSection
     title:
       text: Présentation de la RAAC
