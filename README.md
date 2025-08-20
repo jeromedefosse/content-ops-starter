@@ -34,6 +34,8 @@ GET /.netlify/functions/export-by-surgeon
 Retourne une archive ZIP contenant un CSV par chirurgien :
 `patient_id,patient_email,surgeon,timepoint,created_at,oxford_total,oxford_q1..12,womac_total,womac_pain,womac_stiffness,womac_function,womac_q1..24,qol_vas,pain_vas,satisfaction,extra`
 
+*Satisfaction est notée sur 10 : 0 = très insatisfait, 10 = très satisfait.*
+
 ## Portails
 
 - `/portal/patient?patient_id=...&token=...`
