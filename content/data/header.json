@@ -93,6 +93,14 @@
       "iconPosition": "right",
       "style": "secondary",
       "type": "Link"
+    },
+    {
+      "label": "RAAC",
+      "url": "/raac",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
     }
   ],
   "secondaryLinks": [
