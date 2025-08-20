@@ -1,3 +1,12 @@
 [build]
-  command = "npm run build"
+  command = "node scripts/verify-env.mjs && npm run build"
   publish = ".next"
+  functions = "netlify/functions"
+
+[[scheduled_functions]]
+  name = "send-reminders"
+  cron = "0 5 * * *"
+
+[[scheduled_functions]]
+  name = "surgeon-sync"
+  cron = "0 2 1 * *"
