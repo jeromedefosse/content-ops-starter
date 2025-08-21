@@ -87,6 +87,14 @@
       "type": "Link"
     },
     {
+      "label": "Médecins",
+      "url": "/medecins",
+      "icon": "arrowRight",
+      "iconPosition": "right",
+      "style": "secondary",
+      "type": "Link"
+    },
+    {
       "label": "Admin",
       "url": "/admin",
       "icon": "arrowRight",

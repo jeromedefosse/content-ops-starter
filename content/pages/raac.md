@@ -22,6 +22,12 @@ sections:
         icon: arrowRight
         iconPosition: right
         type: Button
+      - label: Espace Médecins
+        url: /medecins
+        style: primary
+        icon: arrowRight
+        iconPosition: right
+        type: Button
       - label: Espace Administration
         url: /admin
         style: primary
@@ -96,6 +102,23 @@ sections:
     actions:
       - label: Accéder à l'espace Chirurgiens
         url: /chirurgiens
+        style: primary
+        icon: arrowRight
+        iconPosition: right
+        type: Button
+  - type: GenericSection
+    title:
+      text: Espace Médecins
+      type: TitleBlock
+    text: |
+      **Suivi des patients** : accès aux résultats et à l’historique des questionnaires.
+
+      **Communication** : dépôt sécurisé de documents et envoi d’e-mails aux patients.
+
+      **Analyse et export** : génération de statistiques et extraction des données au format CSV.
+    actions:
+      - label: Accéder à l'espace Médecins
+        url: /medecins
         style: primary
         icon: arrowRight
         iconPosition: right
