@@ -38,3 +38,5 @@ npm run build
 ## Licence
 
 Ce projet est diffusé sous licence [MIT](LICENSE).
+
+© 2025 Jérôme DEFOSSE – Créateur et détenteur des droits.
