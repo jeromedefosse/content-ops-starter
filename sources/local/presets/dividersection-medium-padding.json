@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Medium padding",
-      "thumbnail": "images/divider-section-medium-padding-208f.png",
+      "thumbnail": "",
       "data": {
         "title": "Divider",
         "elementId": "",

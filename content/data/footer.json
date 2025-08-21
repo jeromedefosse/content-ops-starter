@@ -4,30 +4,37 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "Nous sommes là pour vous soigner.",
     "primaryLinks": {
-        "title": "Product",
+        "title": "Nos services",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
+                "label": "Espace Patients",
+                "url": "/patients",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Pricing",
-                "url": "/pricing",
+                "label": "Espace Chirurgiens",
+                "url": "/chirurgiens",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Documentation",
-                "url": "/",
+                "label": "Espace Administration",
+                "url": "/admin",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "Programme RAAC",
+                "url": "/raac",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
@@ -37,20 +44,27 @@
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "title": "Company",
+        "title": "Nous contacter",
         "links": [
             {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
+                "label": "05 59 51 63 63",
+                "url": "tel:+33559516363",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
                 "type": "Link"
             },
             {
-                "label": "Blog",
-                "url": "/blog",
+                "label": "info@pcbs.fr",
+                "url": "mailto:info@pcbs.fr",
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "style": "secondary",
+                "type": "Link"
+            },
+            {
+                "label": "7 Rue Léonce Goyetche, 64500 Saint-Jean-de-Luz",
+                "url": "https://maps.app.goo.gl/qBSq3fzQ16HVwmU97",
                 "icon": "arrowRight",
                 "iconPosition": "right",
                 "style": "secondary",
@@ -61,27 +75,21 @@
     },
     "socialLinks": [
         {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
+            "altText": "Facebook",
+            "url": "https://www.facebook.com/PolycliniqueCoteBasqueSud/",
+            "icon": "facebook",
             "type": "Social"
         },
         {
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter",
+            "altText": "Instagram",
+            "url": "https://www.instagram.com/polyclinique_cote_basque_sud/",
+            "icon": "instagram",
             "type": "Social"
         },
         {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
+            "altText": "LinkedIn",
+            "url": "https://www.linkedin.com/company/polyclinique-cote-basque-sud/",
             "icon": "linkedin",
-            "type": "Social"
-        },
-        {
-            "altText": "Email link",
-            "url": "/",
-            "icon": "mail",
             "type": "Social"
         }
     ],
@@ -103,7 +111,7 @@
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify](https://www.netlify.com/)\n",
+    "copyrightText": "© 2025 Jérôme DEFOSSE - Tous droits réservés.",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }

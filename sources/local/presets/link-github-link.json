@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "GitHub link",
-      "thumbnail": "images/link-github-link-f4df.png",
+      "thumbnail": "",
       "data": {
         "label": "GitHub",
         "altText": "GitHub",

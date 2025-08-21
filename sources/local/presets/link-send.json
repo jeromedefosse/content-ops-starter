@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Send",
-      "thumbnail": "images/link-send-5cc9.png",
+      "thumbnail": "",
       "data": {
         "label": "Send",
         "altText": "Send",

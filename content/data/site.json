@@ -2,7 +2,7 @@
     "favicon": "/images/favicon.svg",
     "footer": "content/data/footer.json",
     "titleSuffix": "Theme Demo",
-    "defaultSocialImage": "/images/main-hero.jpg",
+    "defaultSocialImage": "https://placehold.co/1200x630",
     "type": "Config",
     "header": "content/data/header.json"
 }

@@ -3,7 +3,7 @@ import { Model } from '@stackbit/types';
 export const PostFeedLayout: Model = {
     type: 'page',
     name: 'PostFeedLayout',
-    label: 'Blog',
+    label: 'Articles',
     labelField: 'title',
     singleInstance: true,
     canDelete: false,
@@ -78,7 +78,6 @@ export const PostFeedLayout: Model = {
                     'FeaturedPostsSection',
                     'GenericSection',
                     'ImageGallerySection',
-                    'PricingSection',
                     'RecentPostsSection'
                 ]
             }
@@ -100,7 +99,6 @@ export const PostFeedLayout: Model = {
                     'FeaturedPostsSection',
                     'GenericSection',
                     'ImageGallerySection',
-                    'PricingSection',
                     'RecentPostsSection'
                 ]
             }

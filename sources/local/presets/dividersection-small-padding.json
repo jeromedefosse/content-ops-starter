@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Small padding",
-      "thumbnail": "images/divider-section-small-padding-2a1b.png",
+      "thumbnail": "",
       "data": {
         "title": "Divider",
         "elementId": "",

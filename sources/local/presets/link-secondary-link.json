@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Secondary link",
-      "thumbnail": "images/link-secondary-link-0c1a.png",
+      "thumbnail": "",
       "data": {
         "label": "See Tutorials",
         "altText": "",

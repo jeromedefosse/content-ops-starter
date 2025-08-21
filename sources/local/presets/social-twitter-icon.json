@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Twitter icon",
-      "thumbnail": "images/social-twitter-icon-5eae.png",
+      "thumbnail": "",
       "data": {
         "altText": "Twitter link",
         "url": "https://twitter.com/netlify",

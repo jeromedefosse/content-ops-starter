@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Facebook icon",
-      "thumbnail": "images/social-facebook-icon-97c5.png",
+      "thumbnail": "",
       "data": {
         "altText": "Facebook link",
         "url": "/",

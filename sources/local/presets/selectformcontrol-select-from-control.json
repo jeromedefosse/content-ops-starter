@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Select from control",
-      "thumbnail": "images/select-form-control-select-from-control-c9d6.png",
+      "thumbnail": "",
       "data": {
         "name": "company-size",
         "label": "Company size",

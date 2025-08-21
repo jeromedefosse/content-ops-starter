@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Reddit icon",
-      "thumbnail": "images/link-reddit-icon-ac51.png",
+      "thumbnail": "",
       "data": {
         "label": null,
         "altText": "Reddit",

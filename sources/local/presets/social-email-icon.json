@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Email icon",
-      "thumbnail": "images/social-email-icon-0bae.png",
+      "thumbnail": "",
       "data": {
         "altText": "Email icon",
         "url": "/",

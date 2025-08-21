@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Textarea form control",
-      "thumbnail": "images/textarea-form-control-textarea-form-control-73ab.png",
+      "thumbnail": "",
       "data": {
         "name": "message",
         "label": "Message",

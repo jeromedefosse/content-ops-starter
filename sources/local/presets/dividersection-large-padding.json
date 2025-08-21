@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Large padding",
-      "thumbnail": "images/divider-section-large-padding-bfd8.png",
+      "thumbnail": "",
       "data": {
         "title": "Divider",
         "elementId": "",

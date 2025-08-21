@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "YouTube link",
-      "thumbnail": "images/link-youtube-link-dbc6.png",
+      "thumbnail": "",
       "data": {
         "label": "YouTube",
         "altText": "YouTube",

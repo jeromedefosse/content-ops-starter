@@ -23,8 +23,6 @@ import { Person } from './Person';
 import { PostFeedLayout } from './PostFeedLayout';
 import { PostFeedSection } from './PostFeedSection';
 import { PostLayout } from './PostLayout';
-import { PricingPlan } from './PricingPlan';
-import { PricingSection } from './PricingSection';
 import { RecentPostsSection } from './RecentPostsSection';
 import { SelectFormControl } from './SelectFormControl';
 import { Social } from './Social';
@@ -69,8 +67,6 @@ export const allModels = {
     PostFeedLayout,
     PostFeedSection,
     PostLayout,
-    PricingPlan,
-    PricingSection,
     RecentPostsSection,
     SelectFormControl,
     Social,

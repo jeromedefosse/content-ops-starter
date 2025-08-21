@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Text form control",
-      "thumbnail": "images/text-form-control-text-form-control-1f37.png",
+      "thumbnail": "",
       "data": {
         "name": "name",
         "label": "Name",

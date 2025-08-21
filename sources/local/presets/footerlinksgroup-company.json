@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "company",
-      "thumbnail": "images/footer-links-group-company-ca84.png",
+      "thumbnail": "",
       "data": {
         "title": "Company",
         "links": [
@@ -11,17 +11,6 @@
             "label": "About",
             "altText": "",
             "url": "/",
-            "showIcon": false,
-            "icon": "arrowRight",
-            "iconPosition": "right",
-            "style": "secondary",
-            "elementId": "",
-            "$$type": "Link"
-          },
-          {
-            "label": "Blog",
-            "altText": "",
-            "url": "/blog",
             "showIcon": false,
             "icon": "arrowRight",
             "iconPosition": "right",

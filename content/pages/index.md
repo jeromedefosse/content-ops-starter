@@ -243,7 +243,7 @@ sections:
       vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
     media:
       title: Title of the video
-      url: /images/placeholder-video.mp4
+      url: https://www.w3schools.com/html/mov_bbb.mp4
       controls: false
       aspectRatio: '16:9'
       styles:
@@ -293,7 +293,7 @@ sections:
     actions: []
     media:
       title: Title of the video
-      url: /images/placeholder-video.mp4
+      url: https://www.w3schools.com/html/mov_bbb.mp4
       autoplay: true
       loop: true
       muted: true
@@ -414,7 +414,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/person-placeholder-light.png
+          url: https://placehold.co/400x400
           altText: Maria Walters
           styles:
             self:
@@ -443,7 +443,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/person-placeholder-light.png
+          url: https://placehold.co/400x400
           altText: John Doe
           styles:
             self:
@@ -472,7 +472,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/person-placeholder-light.png
+          url: https://placehold.co/400x400
           altText: Maria Walters
           styles:
             self:
@@ -502,7 +502,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/person-placeholder-light.png
+          url: https://placehold.co/400x400
           altText: Maria Walters
           styles:
             self:
@@ -531,7 +531,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/person-placeholder-light.png
+          url: https://placehold.co/400x400
           altText: Maria Walters
           styles:
             self:
@@ -560,7 +560,7 @@ sections:
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
           explicabo.
         image:
-          url: /images/img-placeholder-dark.png
+          url: https://placehold.co/600x400
           altText: Jane Doe
           styles:
             self:
@@ -741,7 +741,7 @@ sections:
 seo:
   metaTitle: Home - Demo site
   metaDescription: This demo site is built with Netlify Create.
-  socialImage: /images/main-hero.jpg
+  socialImage: https://placehold.co/1200x630
   type: Seo
 type: PageLayout
 ---

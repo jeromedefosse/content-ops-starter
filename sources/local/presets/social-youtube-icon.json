@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "YouTube icon",
-      "thumbnail": "images/social-youtube-icon-54b0.png",
+      "thumbnail": "",
       "data": {
         "altText": "YouTube icon",
         "url": "/",

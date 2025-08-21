@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "LinkedIn icon",
-      "thumbnail": "images/social-linkedin-icon-10b3.png",
+      "thumbnail": "",
       "data": {
         "altText": "LinkedIn link",
         "url": "/",

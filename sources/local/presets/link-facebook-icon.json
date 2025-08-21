@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Facebook icon",
-      "thumbnail": "images/link-facebook-icon-e829.png",
+      "thumbnail": "",
       "data": {
         "label": null,
         "altText": "Facebook",

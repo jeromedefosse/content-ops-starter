@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "LinkedIn link",
-      "thumbnail": "images/link-linkedin-link-427f.png",
+      "thumbnail": "",
       "data": {
         "label": "LinkedIn",
         "altText": "LinkedIn",

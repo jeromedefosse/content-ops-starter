@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Twitter icon",
-      "thumbnail": "images/link-twitter-icon-23d8.png",
+      "thumbnail": "",
       "data": {
         "label": null,
         "altText": "Twitter",

@@ -1,129 +1,57 @@
 {
-    "model": "Header",
-    "presets": [
-        {
-            "label": "Header",
-            "locale": null,
-            "data": {
-                "title": null,
-                "logo": {
-                    "url": "/images/logo-dark.svg",
-                    "altText": "Logo dark",
-                    "elementId": null,
-                    "styles": {
-                        "self": {
-                            "margin": [
-                                "mr-3"
-                            ]
-                        }
-                    },
-                    "$$type": "ImageBlock"
-                },
-                "primaryLinks": [
-                    {
-                        "label": "Pricing",
-                        "altText": null,
-                        "url": "/pricing",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Link"
-                    },
-                    {
-                        "label": "Blog",
-                        "altText": "Blog",
-                        "url": "/blog",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Link"
-                    },
-                    {
-                        "label": "Careers",
-                        "altText": "Careers page",
-                        "url": "/careers",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Link"
-                    },
-                    {
-                        "label": "Dropdown",
-                        "altText": "Dropdown",
-                        "links": [
-                            {
-                                "label": "Dropdown item",
-                                "altText": null,
-                                "url": "/",
-                                "showIcon": null,
-                                "icon": "arrowRight",
-                                "iconPosition": "right",
-                                "style": "secondary",
-                                "elementId": null,
-                                "$$type": "Link"
-                            },
-                            {
-                                "label": "Dropdown item",
-                                "altText": null,
-                                "url": "/",
-                                "showIcon": null,
-                                "icon": "arrowRight",
-                                "iconPosition": "right",
-                                "style": "secondary",
-                                "elementId": null,
-                                "$$type": "Link"
-                            },
-                            {
-                                "label": "Dropdown item",
-                                "altText": null,
-                                "url": "/",
-                                "showIcon": null,
-                                "icon": "arrowRight",
-                                "iconPosition": "right",
-                                "style": "secondary",
-                                "elementId": null,
-                                "$$type": "Link"
-                            }
-                        ],
-                        "labelStyle": "secondary",
-                        "$$type": "SubNav"
-                    }
-                ],
-                "secondaryLinks": [
-                    {
-                        "label": "Sign up",
-                        "altText": "Sign up",
-                        "url": "/",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "secondary",
-                        "elementId": null,
-                        "$$type": "Button"
-                    },
-                    {
-                        "label": "Log in",
-                        "altText": null,
-                        "url": "/",
-                        "showIcon": null,
-                        "icon": "arrowRight",
-                        "iconPosition": "right",
-                        "style": "primary",
-                        "elementId": null,
-                        "$$type": "Button"
-                    }
-                ],
-                "variant": "logo-left-primary-nav-centered",
-                "colors": "bg-light-fg-dark",
-                "styles": null
-            },
-            "thumbnail": "images/header-header-07de.png"
-        }
-    ]
+  "model": "Header",
+  "presets": [
+    {
+      "label": "Header",
+      "data": {
+        "logo": {
+          "url": "https://polyclinique-cotebasquesud.fr/wp-content/uploads/2022/07/POLYCLINIQUE-COTE-BASQUE-SUD-ICONE.png",
+          "altText": "Polyclinique Côte Basque Sud logo",
+          "styles": {
+            "self": {
+              "margin": ["mr-6"],
+              "width": "w-20"
+            }
+          },
+          "$$type": "ImageBlock"
+        },
+        "primaryLinks": [
+          {
+            "label": "Patients",
+            "url": "/patients",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "$$type": "Link"
+          },
+          {
+            "label": "Chirurgiens",
+            "url": "/chirurgiens",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "$$type": "Link"
+          },
+          {
+            "label": "Admin",
+            "url": "/admin",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "$$type": "Link"
+          },
+          {
+            "label": "RAAC",
+            "url": "/raac",
+            "icon": "arrowRight",
+            "iconPosition": "right",
+            "style": "secondary",
+            "$$type": "Link"
+          }
+        ],
+        "variant": "logo-left-primary-nav-right",
+        "colors": "bg-light-fg-dark"
+      }
+    }
+  ]
 }

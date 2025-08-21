@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "GitHub icon",
-      "thumbnail": "images/link-github-icon-3beb.png",
+      "thumbnail": "",
       "data": {
         "label": null,
         "altText": "GitHub",

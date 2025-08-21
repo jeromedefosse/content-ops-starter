@@ -20,7 +20,7 @@
                 "actions": [],
                 "media": {
                     "title": "Title of the video",
-                    "url": "/images/placeholder-video.mp4",
+                    "url": "https://www.w3schools.com/html/mov_bbb.mp4",
                     "autoplay": true,
                     "loop": true,
                     "muted": true,
@@ -57,7 +57,7 @@
                     }
                 }
             },
-            "thumbnail": "images/generic-section-generic-section-with-video-a138.png"
+            "thumbnail": ""
         }
     ]
 }

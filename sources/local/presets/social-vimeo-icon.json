@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Vimeo icon",
-      "thumbnail": "images/social-vimeo-icon-93e4.png",
+      "thumbnail": "",
       "data": {
         "altText": "Vimeo link",
         "url": "/",

@@ -329,7 +329,7 @@
                         "actions": [],
                         "media": {
                             "title": "Title of the video",
-                            "url": "/images/placeholder-video.mp4",
+                            "url": "https://www.w3schools.com/html/mov_bbb.mp4",
                             "autoplay": true,
                             "loop": true,
                             "muted": true,
@@ -387,7 +387,7 @@
                         "actions": [],
                         "media": {
                             "title": "Title of the video",
-                            "url": "/images/placeholder-video.mp4",
+                            "url": "https://www.w3schools.com/html/mov_bbb.mp4",
                             "autoplay": true,
                             "loop": true,
                             "muted": true,
@@ -554,7 +554,7 @@
                                 "subtitle": "Maria Walters, Company",
                                 "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.",
                                 "image": {
-                                    "url": "/images/person-placeholder-light.png",
+                                    "url": "https://placehold.co/400x400",
                                     "altText": "Maria Walters",
                                     "elementId": null,
                                     "styles": {
@@ -584,7 +584,7 @@
                                 "subtitle": "Jane Doe, Company",
                                 "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.",
                                 "image": {
-                                    "url": "/images/img-placeholder-dark.png",
+                                    "url": "https://placehold.co/600x400",
                                     "altText": "Jane Doe",
                                     "elementId": null,
                                     "styles": {
@@ -818,13 +818,13 @@
                     "metaTitle": "Home - Demo site",
                     "metaDescription": "This demo site is built with Netlify Create",
                     "addTitleSuffix": null,
-                    "socialImage": "/images/main-hero.jpg",
+                    "socialImage": "https://placehold.co/1200x630",
                     "metaTags": [],
                     "$$type": "Seo"
                 },
                 "markdown_content": ""
             },
-            "thumbnail": "images/page-layout-main-page-fc14.png"
+            "thumbnail": ""
         }
     ]
 }

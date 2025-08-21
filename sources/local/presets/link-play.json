@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Play",
-      "thumbnail": "images/link-play-6021.png",
+      "thumbnail": "",
       "data": {
         "label": "Play",
         "altText": "Play",

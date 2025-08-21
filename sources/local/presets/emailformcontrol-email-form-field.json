@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Email form field",
-      "thumbnail": "images/email-form-control-email-form-field-7835.png",
+      "thumbnail": "",
       "data": {
         "name": "email",
         "label": "Email",

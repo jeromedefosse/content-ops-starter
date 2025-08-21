@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Instagram link",
-      "thumbnail": "images/link-instagram-link-0bf0.png",
+      "thumbnail": "",
       "data": {
         "label": "Instagram",
         "altText": "Instagram",

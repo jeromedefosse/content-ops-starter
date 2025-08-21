@@ -3,7 +3,7 @@
   "presets": [
     {
       "label": "Shopping bag",
-      "thumbnail": "images/link-shopping-bag-f246.png",
+      "thumbnail": "",
       "data": {
         "label": "Buy now",
         "altText": "Buy now",
