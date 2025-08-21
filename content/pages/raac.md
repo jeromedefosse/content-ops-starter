@@ -16,24 +16,21 @@ sections:
         icon: arrowRight
         iconPosition: right
         type: Button
+        className: px-8 py-4 text-lg
       - label: Espace Chirurgiens
         url: /chirurgiens
         style: primary
         icon: arrowRight
         iconPosition: right
         type: Button
-      - label: Espace Médecins
-        url: /medecins
-        style: primary
-        icon: arrowRight
-        iconPosition: right
-        type: Button
+        className: px-8 py-4 text-lg
       - label: Espace Administration
         url: /admin
         style: primary
         icon: arrowRight
         iconPosition: right
         type: Button
+        className: px-8 py-4 text-lg
     media:
       url: /images/main-hero.jpg
       altText: Illustration RAAC
@@ -89,6 +86,7 @@ sections:
         icon: arrowRight
         iconPosition: right
         type: Button
+        className: px-8 py-4 text-lg
   - type: GenericSection
     title:
       text: Espace Chirurgiens
@@ -106,23 +104,7 @@ sections:
         icon: arrowRight
         iconPosition: right
         type: Button
-  - type: GenericSection
-    title:
-      text: Espace Médecins
-      type: TitleBlock
-    text: |
-      **Suivi des patients** : accès aux résultats et à l’historique des questionnaires.
-
-      **Communication** : dépôt sécurisé de documents et envoi d’e-mails aux patients.
-
-      **Analyse et export** : génération de statistiques et extraction des données au format CSV.
-    actions:
-      - label: Accéder à l'espace Médecins
-        url: /medecins
-        style: primary
-        icon: arrowRight
-        iconPosition: right
-        type: Button
+        className: px-8 py-4 text-lg
   - type: GenericSection
     title:
       text: Espace Administration
@@ -140,4 +122,5 @@ sections:
         icon: arrowRight
         iconPosition: right
         type: Button
+        className: px-8 py-4 text-lg
 ---
