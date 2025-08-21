@@ -1,74 +1,42 @@
-# Content Ops Starter
+# Portail RAAC – Polyclinique Côte Basque Sud
 
-![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
+Ce dépôt contient le site Web utilisé pour accompagner le programme de Réhabilitation
+Améliorée Après Chirurgie (RAAC) de la Polyclinique Côte Basque Sud. Il fournit des
+interfaces dédiées aux patients, aux chirurgiens et aux administrateurs afin de
+suivre les questionnaires, partager des documents et exporter des statistiques.
 
-Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+## Fonctionnalités principales
 
-**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
+- **Espace patients** : identification par nom, chirurgien et type d’intervention,
+  rappels automatiques des questionnaires, suivi de progression et accès aux
+  documents et synthèses graphiques.
+- **Espace chirurgiens** : consultation des résultats des patients, dépôt de
+  documents, communication par e‑mail et export des données au format CSV.
+- **Espace administration** : création et gestion des comptes, supervision des
+  questionnaires avec alertes visuelles, envoi de mails et extractions filtrées
+  en CSV.
+- **Charte graphique** : logo officiel et palette de couleurs de la clinique
+  intégrés à l’interface.
 
-## Table of Contents
+## Développement
 
-- [Deploying to Netlify](#deploying-to-netlify)
-- [Develop with Netlify Visual Editor Locally](#develop-with-netlify-visual-editor-locally)
-- [Building for production](#building-for-production)
-- [Setting Up Algolia Search](#setting-up-algolia-search)
-- [Next Steps](#next-steps)
-- [Support](#support)
+Prérequis : Node.js 18 ou version supérieure.
 
-## Deploying to Netlify
-
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
-
-## Develop with Netlify Visual Editor Locally
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd content-ops-starter
+```bash
+npm install
 npm run dev
 ```
 
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
+L’application est accessible sur `http://localhost:3000`.
 
-```txt
-npm install -g @stackbit/cli
-stackbit dev
-```
+## Construction pour la production
 
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
-
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
-
-## Building for production
-
-To build a static site for production, run the following command
-
-```shell
+```bash
 npm run build
 ```
 
-## Setting Up Algolia Search
+## Licence
 
-This starter includes Algolia search integration. To set it up:
+Ce projet est diffusé sous licence [MIT](LICENSE).
 
-1. Create an [Algolia](https://www.algolia.com/) account
-2. Create a new application and index
-3. Set the following environment variables:
-   - `NEXT_PUBLIC_ALGOLIA_APP_ID` - Your Algolia application ID
-   - `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY` - Your Algolia search-only API key
-   - `NEXT_PUBLIC_ALGOLIA_INDEX_NAME` - Your index name
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
-
-- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+© 2025 Jérôme DEFOSSE – Créateur et détenteur des droits.
