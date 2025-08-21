@@ -128,11 +128,11 @@ sections:
       text: Espace Administration
       type: TitleBlock
     text: |
-      **Gestion des comptes** : création, modification et suivi des accès pour les profils utilisateurs.
+      **Accès aux paramètres** : création des espaces patients et médecins et gestion complète des comptes.
 
-      **Suivi des données** : tableaux de bord, indicateurs RAAC et reporting d’activité.
+      **Suivi des patients** : liste détaillée avec dates d'intervention, état des questionnaires et alertes rouges en cas de dépassement des délais, avec envoi d'e-mails.
 
-      **Paramètres RAAC** : configuration des protocoles, mises à jour des contenus et gestion des ressources partagées.
+      **Exports et statistiques** : filtres par patient, chirurgie, type d'intervention ou date, compteurs d'activité et export CSV.
     actions:
       - label: Accéder à l'espace Administration
         url: /admin
