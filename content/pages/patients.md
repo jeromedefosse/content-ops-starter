@@ -19,6 +19,7 @@ sections:
       - Renseignez les questionnaires programmés aux dates précisées, avec des rappels automatiques dans votre espace.
       - Suivez votre progression dans le parcours et consultez les documents déposés par votre chirurgien ou l’infirmière de parcours.
       - Accédez à vos anciens questionnaires archivés.
+      - Consultez et remplissez le [1er questionnaire patient](/questionnaire-patient) aux dates indiquées.
       - Visualisez une synthèse graphique de l’analyse de vos réponses à chaque étape.
   - type: GenericSection
     title:
