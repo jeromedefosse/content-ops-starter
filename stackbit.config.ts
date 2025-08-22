@@ -34,23 +34,10 @@ export const config = defineStackbitConfig({
                 /* Remove the leading slash in order to generate correct urlPath
                 regardless of whether the slug is '/', 'slug' or '/slug' */
                 slug = slug.replace(/^\/+/, '');
-                switch (document.modelName) {
-                    case 'PostFeedLayout':
-                        return {
-                            urlPath: '/blog',
-                            document: document
-                        };
-                    case 'PostLayout':
-                        return {
-                            urlPath: `/blog/${slug}`,
-                            document: document
-                        };
-                    default:
-                        return {
-                            urlPath: `/${slug}`,
-                            document: document
-                        };
-                }
+                return {
+                    urlPath: `/${slug}`,
+                    document: document
+                };
             });
     }
 });

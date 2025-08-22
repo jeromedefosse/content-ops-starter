@@ -1,38 +1,3 @@
-export function getAllPostsSorted(objects) {
-    const allPosts = getAllPosts(objects);
-    return sortPosts(allPosts);
-}
-
-export function getAllCategoryPostsSorted(objects, categoryId) {
-    const allPosts = getAllPosts(objects);
-    const categoryPosts = allPosts.filter((post) => post.category === categoryId);
-    return sortPosts(categoryPosts);
-}
-
-export function getAllPosts(objects) {
-    return objects.filter((object) => object.__metadata?.modelName === 'PostLayout');
-}
-
-export function getAllFeaturedPostsSorted(objects) {
-    const allPosts = getAllPosts(objects);
-    const featuredPosts = allPosts.filter((post) => post.isFeatured === true);
-    return sortPosts(featuredPosts);
-}
-
-export function getAllNonFeaturedPostsSorted(objects) {
-    const allPosts = getAllPosts(objects);
-    const nonFeaturedPosts = allPosts.filter((post) => post.isFeatured !== true);
-    return sortPosts(nonFeaturedPosts);
-}
-
-export function sortPosts(posts) {
-    return posts.sort((postA, postB) => new Date(postB.date).getTime() - new Date(postA.date).getTime());
-}
-
-export function isPublished(page) {
-    return !page.isDraft;
-}
-
 export function resolveReferences(object, fieldPaths, objects, debugContext = { keyPath: [], stack: [] }) {
     const _resolveDeep = (value, fieldNames, debugContext) => {
         if (typeof value === 'string') {
@@ -139,45 +104,6 @@ export function getRootPagePath(pagePath) {
         return pagePath;
     }
     return pagePath.substring(0, pagedPathMatch.index);
-}
-
-export function generatePagedPathsForPage(page, items, numOfItemsPerPage) {
-    const pageUrlPath = page.__metadata?.urlPath;
-    if (numOfItemsPerPage === 0) {
-        return [pageUrlPath];
-    }
-    const numOfPages = Math.ceil(items.length / numOfItemsPerPage) || 1;
-    const paths = [];
-    for (let i = 0; i < numOfPages; i++) {
-        paths.push(i === 0 ? pageUrlPath : `${pageUrlPath}/page/${i + 1}`);
-    }
-    return paths;
-}
-
-export function getPagedItemsForPage(page, items, numOfItemsPerPage) {
-    const pageUrlPath = page.__metadata?.urlPath;
-    const baseUrlPath = getRootPagePath(pageUrlPath);
-    if (numOfItemsPerPage === 0) {
-        return {
-            pageIndex: 0,
-            baseUrlPath,
-            numOfPages: 1,
-            numOfTotalItems: items.length,
-            items: items
-        };
-    }
-    const pageIndexMatch = pageUrlPath.match(/\/page\/(\d+)$/);
-    const pageIndex = pageIndexMatch ? parseInt(pageIndexMatch[1]) - 1 : 0;
-    const numOfPages = Math.ceil(items.length / numOfItemsPerPage) || 1;
-    const startIndex = pageIndex * numOfItemsPerPage;
-    const endIndex = startIndex + numOfItemsPerPage;
-    return {
-        pageIndex,
-        baseUrlPath,
-        numOfPages: numOfPages,
-        numOfTotalItems: items.length,
-        items: items.slice(startIndex, endIndex)
-    };
 }
 
 export async function mapDeepAsync(value, iteratee, options = {}) {

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { allContent } from '../utils/local-content';
 import { getComponent } from '../components/components-registry';
 import { resolveStaticProps } from '../utils/static-props-resolvers';
-import { resolveStaticPaths } from '../utils/static-paths-resolvers';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../utils/seo-utils';
 
 function Page(props) {
@@ -41,7 +40,9 @@ function Page(props) {
 
 export function getStaticPaths() {
     const data = allContent();
-    const paths = resolveStaticPaths(data);
+    const paths = data.pages
+        .filter((page) => process.env.stackbitPreview || !page.isDraft)
+        .map((page) => page.__metadata.urlPath);
     return { paths, fallback: false };
 }
 
