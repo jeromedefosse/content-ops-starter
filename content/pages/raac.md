@@ -28,7 +28,7 @@ sections:
       - type: FeaturedItem
         title: Espace Chirurgiens
         text: >-
-          Protocoles RAAC, partage de documents et échanges sécurisés avec les patients.
+          Liste de patients, résultats des questionnaires et messagerie sécurisée avec patients ou administration.
         actions:
           - label: Accéder à l'espace Chirurgiens
             url: /chirurgiens

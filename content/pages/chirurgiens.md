@@ -11,6 +11,18 @@ sections:
       Outils et protocoles pour accompagner les chirurgiens dans la prise en charge RAAC.
   - type: GenericSection
     title:
+      text: Suivi des patients
+      type: TitleBlock
+    text: >-
+      Liste des patients opérés avec accès direct à leur fiche de suivi et aux résultats des questionnaires.
+  - type: GenericSection
+    title:
+      text: Messagerie sécurisée
+      type: TitleBlock
+    text: >-
+      Echanges chiffrés avec un ou plusieurs patients ou l’administration et partage de documents.
+  - type: GenericSection
+    title:
       text: Protocoles RAAC
       type: TitleBlock
     text: >-
