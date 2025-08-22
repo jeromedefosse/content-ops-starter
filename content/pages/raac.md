@@ -39,7 +39,7 @@ sections:
       - type: FeaturedItem
         title: Espace Administration
         text: >-
-          Gestion des comptes, suivi des questionnaires et exports statistiques en CSV.
+          Accès à toutes les fonctionnalités, création de patients, suivi des questionnaires et exports statistiques en CSV.
         actions:
           - label: Accéder à l'espace Administration
             url: /admin

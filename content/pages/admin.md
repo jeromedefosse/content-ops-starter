@@ -7,8 +7,9 @@ sections:
     title:
       text: Espace Administration
       type: TitleBlock
-    text: >-
+    text: |-
       Gestion des utilisateurs, des contenus et des paramètres pour l'équipe administrative.
+      Accès complet à l'ensemble des fonctionnalités du portail.
   - type: GenericSection
     title:
       text: Accès et identifiants
@@ -29,6 +30,13 @@ sections:
       type: TitleBlock
     text: >-
       L'administrateur peut créer et gérer les espaces de chaque patient et de chaque médecin, avec accès à tous les profils et aux paramètres globaux.
+  - type: GenericSection
+    title:
+      text: Création de patient
+      type: TitleBlock
+    text: |-
+      Interface dédiée pour enregistrer un nouveau patient en renseignant son identité, son chirurgien et son type d'intervention.
+      Les identifiants sont générés et transmis automatiquement.
   - type: GenericSection
     title:
       text: Suivi des patients
