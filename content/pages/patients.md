@@ -21,6 +21,7 @@ sections:
       - Accédez à vos anciens questionnaires archivés.
       - Consultez et remplissez le [1er questionnaire patient](/questionnaire-patient) aux dates indiquées.
       - Consultez également l'[Annexe 2 : Score WOMAC](/score-womac) selon les recommandations de votre équipe soignante.
+      - Remplissez la [Mesure standardisée de la qualité de vie](/qualite-vie) pour évaluer votre état de santé global.
       - Visualisez une synthèse graphique de l’analyse de vos réponses à chaque étape.
   - type: GenericSection
     title:
