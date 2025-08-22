@@ -3,14 +3,22 @@ import { createContext, useContext, useState } from 'react';
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-    const [users, setUsers] = useState({
-        'admin@example.com': {
-            name: 'Admin',
-            email: 'admin@example.com',
-            password: 'admin',
-            profile: 'admin'
-        }
-    });
+    const defaultAdmins = [
+        'jdefosse@pcbs.fr',
+        'jeromedefosse@me.com',
+        'flascano@pcbs.fr',
+        'ygautronneau@pcbs.fr',
+        'mtardif@pcbs.fr',
+        'cpajot@pcbs.fr'
+    ];
+
+    const initialUsers = defaultAdmins.reduce((acc, email) => {
+        const name = email.split('@')[0];
+        acc[email] = { name, email, password: 'AdminPCBS', profile: 'admin' };
+        return acc;
+    }, {});
+
+    const [users, setUsers] = useState(initialUsers);
     const [currentUser, setCurrentUser] = useState(null);
 
     function registerUser({ name, email, password, profile }) {
