@@ -1,6 +1,6 @@
 ---
 title: Espace Administration
-slug: admin
+slug: admin-info
 type: PageLayout
 sections:
   - type: GenericSection
