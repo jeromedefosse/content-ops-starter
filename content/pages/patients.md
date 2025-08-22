@@ -15,14 +15,17 @@ sections:
       type: TitleBlock
     text: |
       Chaque patient s’identifie par son **nom**, son **prénom**, le **chirurgien** et le **type d’intervention**.
-      
+      Dans son tableau de bord, sa **fiche patient** affiche également ses **coordonnées**, la **date** et la **nature de l’intervention**, ainsi que le **nom du chirurgien**.
+
+      - Connectez‑vous avec votre **adresse e‑mail** et le **mot de passe** défini lors de la création de votre espace par l’administrateur.
       - Renseignez les questionnaires programmés aux dates précisées, avec des rappels automatiques dans votre espace.
-      - Suivez votre progression dans le parcours et consultez les documents déposés par votre chirurgien ou l’infirmière de parcours.
-      - Accédez à vos anciens questionnaires archivés.
+      - Consultez l’historique de vos réponses et visualisez une synthèse graphique de l’analyse à chaque étape.
+      - Utilisez la **messagerie sécurisée** pour communiquer avec les administrateurs ou votre chirurgien.
+      - Déposez vos documents, imprimez ou visualisez ceux disponibles dans votre espace.
       - Consultez et remplissez le [1er questionnaire patient](/questionnaire-patient) aux dates indiquées.
       - Consultez également l'[Annexe 2 : Score WOMAC](/score-womac) selon les recommandations de votre équipe soignante.
       - Remplissez la [Mesure standardisée de la qualité de vie](/qualite-vie) pour évaluer votre état de santé global.
-      - Visualisez une synthèse graphique de l’analyse de vos réponses à chaque étape.
+      - L’accès est strictement limité à votre espace : pas d’accès aux autres patients ni aux interfaces chirurgiens ou administrateurs.
   - type: GenericSection
     title:
       text: Préparation et conseils
