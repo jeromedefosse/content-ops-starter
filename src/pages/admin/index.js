@@ -73,20 +73,24 @@ export default function AdminPage() {
                     Créer
                 </button>
             </form>
-            <div className="grid grid-cols-3 gap-4">
-                {['patient', 'surgeon', 'admin'].map((profile) => (
-                    <div key={profile}>
-                        <h2 className="font-semibold capitalize mb-2">{profile}s</h2>
-                        <ul className="list-disc list-inside">
-                            {Object.values(users)
-                                .filter((u) => u.profile === profile)
-                                .map((user, idx) => (
-                                    <li key={idx}>{user.name}</li>
-                                ))}
-                        </ul>
-                    </div>
-                ))}
-            </div>
+            <table className="min-w-full border">
+                <thead>
+                    <tr>
+                        <th className="border px-2 py-1 text-left">Nom</th>
+                        <th className="border px-2 py-1 text-left">Email</th>
+                        <th className="border px-2 py-1 text-left">Profil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {Object.values(users).map((user, idx) => (
+                        <tr key={idx}>
+                            <td className="border px-2 py-1">{user.name}</td>
+                            <td className="border px-2 py-1">{user.email}</td>
+                            <td className="border px-2 py-1 capitalize">{user.profile}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 }
