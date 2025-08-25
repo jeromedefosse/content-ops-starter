@@ -1,0 +1,7 @@
+{
+    "answers": [
+        { "questionId": 1, "value": 7 },
+        { "questionId": 2, "value": true },
+        { "questionId": 3, "value": false }
+    ]
+}

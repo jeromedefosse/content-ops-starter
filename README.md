@@ -69,15 +69,15 @@ Here are a few suggestions on what to do next if you're new to Netlify visual ed
 - Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
 - Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
 
-## Automatiser les questionnaires et les résultats
+## Automatiser les questionnaires et comparer les résultats
 
-Un script permet de calculer automatiquement un score à partir d'un questionnaire et de générer un PDF récapitulatif.
+Un script permet de traiter dynamiquement n'importe quel questionnaire pour un patient donné. À chaque exécution, il calcule un score, le compare au questionnaire précédent du même patient et génère un PDF récapitulatif.
 
 ```bash
-node scripts/process-questionnaire.js
+node scripts/process-questionnaire.js <patientId> <questionnaire.json> <responses.json>
 ```
 
-Les données sont lues dans `content/data`, le résultat est enregistré dans `content/data/results.json` et `content/data/results.pdf`, puis une copie horodatée est archivée dans `content/data/archive`.
+Les fichiers d'exemple se trouvent dans `content/data`. Les résultats sont enregistrés et archivés dans `content/data/patients/<patientId>` (répertoire ignoré par Git).
 
 ## Support
 

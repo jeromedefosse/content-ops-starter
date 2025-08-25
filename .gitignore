@@ -42,3 +42,8 @@ yarn-error.log*
 .idea
 
 tmp*
+# questionnaire automation outputs
+content/data/results*.json
+content/data/results*.pdf
+content/data/archive/
+content/data/patients/
