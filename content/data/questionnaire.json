@@ -1,0 +1,7 @@
+{
+    "questions": [
+        { "id": 1, "text": "Quelle est votre douleur actuelle?", "type": "scale", "max": 10 },
+        { "id": 2, "text": "Avez-vous de la fièvre?", "type": "boolean" },
+        { "id": 3, "text": "Pouvez-vous marcher sans assistance?", "type": "boolean" }
+    ]
+}

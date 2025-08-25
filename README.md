@@ -69,6 +69,16 @@ Here are a few suggestions on what to do next if you're new to Netlify visual ed
 - Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
 - Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
 
+## Automatiser les questionnaires et les résultats
+
+Un script permet de calculer automatiquement un score à partir d'un questionnaire et de générer un PDF récapitulatif.
+
+```bash
+node scripts/process-questionnaire.js
+```
+
+Les données sont lues dans `content/data`, le résultat est enregistré dans `content/data/results.json` et `content/data/results.pdf`, puis une copie horodatée est archivée dans `content/data/archive`.
+
 ## Support
 
 If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
