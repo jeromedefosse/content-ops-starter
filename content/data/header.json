@@ -1,5 +1,16 @@
 {
-  "logo": null,
+  "logo": {
+    "url": "https://polyclinique-cotebasquesud.fr/wp-content/uploads/2022/07/POLYCLINIQUE-COTE-BASQUE-SUD-ICONE.png",
+    "altText": "Polyclinique Côte Basque Sud logo",
+    "styles": {
+      "self": {
+        "margin": [
+          "mr-3"
+        ]
+      }
+    },
+    "type": "ImageBlock"
+  },
   "primaryLinks": [
     {
       "label": "Patients",
