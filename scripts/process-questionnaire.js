@@ -67,9 +67,7 @@ function main() {
 
     const patientDir = path.join(__dirname, '..', 'content', 'data', 'patients', patientId);
     const questionnairesDir = path.join(patientDir, 'questionnaires');
-    const documentsDir = path.join(patientDir, 'documents');
     fs.mkdirSync(questionnairesDir, { recursive: true });
-    fs.mkdirSync(documentsDir, { recursive: true });
 
     const historyFile = path.join(questionnairesDir, 'history.json');
     let history = [];
