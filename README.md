@@ -69,6 +69,30 @@ Here are a few suggestions on what to do next if you're new to Netlify visual ed
 - Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
 - Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
 
+## Automatiser les questionnaires et comparer les résultats
+
+Un script permet de traiter dynamiquement n'importe quel questionnaire pour un patient donné. À chaque exécution, il calcule un score, le compare au questionnaire précédent du même patient et génère un PDF récapitulatif.
+
+```bash
+node scripts/process-questionnaire.js <patientId> <questionnaire.json> <responses.json>
+```
+
+Les fichiers d'exemple se trouvent dans `content/data`. Les résultats sont enregistrés et archivés dans `content/data/patients/<patientId>/questionnaires` (répertoire ignoré par Git).
+
+### Déposer des documents pour un patient
+
+Un second script permet d'ajouter des documents (PDF ou images) consultables par le patient, son chirurgien ou les administrateurs. Les fichiers sont copiés dans `content/data/patients/<patientId>/documents`.
+
+```bash
+node scripts/add-document.js <patientId> <fichier>
+```
+
+Il est également possible de fournir des données encodées en base64 en ajoutant l'extension désirée :
+
+```bash
+node scripts/add-document.js <patientId> <donneesBase64> png
+```
+
 ## Support
 
 If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
