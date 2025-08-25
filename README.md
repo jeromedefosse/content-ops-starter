@@ -77,7 +77,21 @@ Un script permet de traiter dynamiquement n'importe quel questionnaire pour un p
 node scripts/process-questionnaire.js <patientId> <questionnaire.json> <responses.json>
 ```
 
-Les fichiers d'exemple se trouvent dans `content/data`. Les résultats sont enregistrés et archivés dans `content/data/patients/<patientId>` (répertoire ignoré par Git).
+Les fichiers d'exemple se trouvent dans `content/data`. Les résultats sont enregistrés et archivés dans `content/data/patients/<patientId>/questionnaires` (répertoire ignoré par Git).
+
+### Déposer des documents pour un patient
+
+Un second script permet d'ajouter des documents (PDF ou images) consultables par le patient, son chirurgien ou les administrateurs. Les fichiers sont copiés dans `content/data/patients/<patientId>/documents`.
+
+```bash
+node scripts/add-document.js <patientId> <fichier>
+```
+
+Il est également possible de fournir des données encodées en base64 en ajoutant l'extension désirée :
+
+```bash
+node scripts/add-document.js <patientId> <donneesBase64> png
+```
 
 ## Support
 
