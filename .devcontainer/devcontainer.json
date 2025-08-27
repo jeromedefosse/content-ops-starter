@@ -1,0 +1,27 @@
+{
+  "name": "content-ops-starter",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "remoteUser": "node",
+  "postCreateCommand": "npm ci && npm i -g @stackbit/cli",
+  "forwardPorts": [3000, 8090],
+  "portsAttributes": {
+    "3000": { "label": "Next.js (web)" },
+    "8090": { "label": "Netlify Visual Editor (stackbit)" }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "streetsidesoftware.code-spell-checker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}

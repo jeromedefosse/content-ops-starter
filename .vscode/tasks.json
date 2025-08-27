@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Dev: Next.js",
+      "type": "shell",
+      "command": "npm run dev:next",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: Visual Editor",
+      "type": "shell",
+      "command": "npm run dev:ve",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Dev: Tout (Next+VE)",
+      "type": "shell",
+      "command": "npm run dev:all",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

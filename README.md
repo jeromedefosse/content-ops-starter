@@ -6,6 +6,27 @@ Netlify starter that's made for customization with a flexible content model, com
 
 **⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
 
+## 🚀 Démarrer dans GitHub Codespaces
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/jeromedefosse/content-ops-starter?quickstart=1)
+
+1. Ouvrez le dépôt dans **Codespaces** (bouton ci-dessus).
+2. À l’ouverture, les dépendances sont installées et le CLI du **Netlify Visual Editor** est ajouté.
+3. Lancez le développement :
+   - Tout-en-un : `npm run dev:all`
+   - Ou séparé (comportement recommandé par le README d’origine) :
+     - `npm run dev` (Next.js)
+     - `stackbit dev` (Netlify Visual Editor)
+4. Les ports **3000** (site Next.js) et **8090** (Visual Editor) seront exposés automatiquement.
+
+### Variables d’environnement (Algolia)
+Ce starter propose une intégration **Algolia**. Créez l’app/index et définissez dans l’environnement :
+- `NEXT_PUBLIC_ALGOLIA_APP_ID`
+- `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY`
+- `NEXT_PUBLIC_ALGOLIA_INDEX_NAME`
+
+Dans Codespaces : *Settings → Codespaces → Secrets* (ou via `.env` local, ne pas commiter).
+
 ## Table of Contents
 
 - [Deploying to Netlify](#deploying-to-netlify)
