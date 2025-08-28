@@ -1,0 +1,9 @@
+[
+  {
+    "firstName": "Jean",
+    "lastName": "Dupont",
+    "email": "jean.dupont@example.com",
+    "surgeonEmail": "chirurgien@example.com",
+    "operationDate": "2024-04-01"
+  }
+]
