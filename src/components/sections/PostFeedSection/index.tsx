@@ -22,7 +22,6 @@ export default function PostFeedSection(props) {
         showDate,
         showAuthor,
         pageLinks,
-        searchBox,
         actions = [],
         variant,
         hoverEffect,
@@ -66,7 +65,6 @@ export default function PostFeedSection(props) {
                         {subtitle}
                     </p>
                 )}
-                {searchBox}
                 <PostFeedVariants
                     variant={variant}
                     posts={posts}

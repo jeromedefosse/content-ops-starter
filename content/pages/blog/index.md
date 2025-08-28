@@ -2,7 +2,6 @@
 title: Blog
 slug: /blog
 numOfPostsPerPage: 8
-enableSearch: true
 topSections:
   - title:
       text: Featured Post

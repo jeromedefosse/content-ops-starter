@@ -11,10 +11,9 @@ export default function PostFeedLayout(props) {
     const { page, site } = props;
     const BaseLayout = getBaseLayoutComponent(page.baseLayout, site.baseLayout);
     const { enableAnnotations = true } = site;
-    const { title, topSections = [], bottomSections = [], pageIndex, baseUrlPath, numOfPages, enableSearch, items, postFeed } = page;
+    const { title, topSections = [], bottomSections = [], pageIndex, baseUrlPath, numOfPages, items, postFeed } = page;
     const PostFeedSection = getComponent('PostFeedSection');
     const pageLinks = PageLinks({ pageIndex, baseUrlPath, numOfPages });
-    const searchBox = SearchBox({ enableSearch });
 
     return (
         <BaseLayout page={page} site={site}>
@@ -29,7 +28,6 @@ export default function PostFeedLayout(props) {
                     {...postFeed}
                     posts={items}
                     pageLinks={pageLinks}
-                    searchBox={searchBox}
                     enableAnnotations={enableAnnotations}
                     {...(enableAnnotations && { 'data-sb-field-path': 'postFeed' })}
                 />
@@ -63,25 +61,6 @@ function renderSections(sections: any[], fieldName: string, enableAnnotations: b
     );
 }
 
-function SearchBox({ enableSearch }) {
-    if (!enableSearch) {
-        return null;
-    }
-    const AutoCompletePosts = getComponent('AutoCompletePosts');
-    const searchBoxStyle = {
-        '--aa-text-color-rgb': '2,0,29',
-        '--aa-muted-color-rgb': '2,0,29',
-        '--aa-muted-color-alpha': 0.5,
-        '--aa-input-border-color-rgb': '2,0,29',
-        '--aa-input-border-color-alpha': 0.25,
-        '--aa-primary-color-rgb': '2,0,29'
-    } as React.CSSProperties;
-    return (
-        <div className="w-full mb-9" style={searchBoxStyle}>
-            <AutoCompletePosts />
-        </div>
-    );
-}
 
 function PageLinks({ pageIndex, baseUrlPath, numOfPages }) {
     if (numOfPages < 2) {
