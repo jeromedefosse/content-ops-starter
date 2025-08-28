@@ -1,0 +1,138 @@
+{
+  "$schema": "https://example.com/ui-config.schema.json",
+  "brand": {
+    "name": "Polyclinique Côte Basque Sud",
+    "logo": {
+      "light": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAOxzw50AAAAASUVORK5CYII=",
+      "dark": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAOxzw50AAAAASUVORK5CYII=",
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAOxzw50AAAAASUVORK5CYII="
+    },
+    "colors": {
+      "primary": "var(--pcbs-primary)",
+      "primary-foreground": "var(--pcbs-on-primary)",
+      "secondary": "var(--pcbs-secondary)",
+      "muted": "var(--pcbs-muted)",
+      "background": "var(--pcbs-background)",
+      "foreground": "var(--pcbs-foreground)"
+    },
+    "fonts": {
+      "heading": "var(--pcbs-font-heading, Inter)",
+      "body": "var(--pcbs-font-body, Inter)"
+    }
+  },
+
+  "header": {
+    "topbar": {
+      "address": "7 Rue Leonce Goyetche, 64500 Saint-Jean-de-Luz",
+      "phoneMain": "05 59 51 63 63",
+      "phoneEr": "05 59 51 74 00",
+      "social": [
+        { "name": "Facebook", "href": "https://www.facebook.com" },
+        { "name": "Instagram", "href": "https://www.instagram.com" },
+        { "name": "LinkedIn", "href": "https://www.linkedin.com" }
+      ]
+    },
+    "nav": [
+      {
+        "label": "La Polyclinique",
+        "slug": "/la-polyclinique",
+        "children": [
+          { "label": "Présentation", "slug": "/la-polyclinique/presentation" },
+          { "label": "La Polyclinique", "slug": "/la-polyclinique" },
+          { "label": "Notre Démarche Qualité", "slug": "/la-polyclinique/demarche-qualite" }
+        ]
+      },
+      {
+        "label": "Nos Spécialistes",
+        "slug": "/nos-specialistes",
+        "children": [
+          { "label": "Anesthésie", "slug": "/nos-specialistes/anesthesie" }
+        ]
+      },
+      {
+        "label": "Mon séjour",
+        "slug": "/mon-sejour",
+        "children": [
+          { "label": "Ambulatoire", "slug": "/mon-sejour/ambulatoire" },
+          { "label": "Hospitalisation", "slug": "/mon-sejour/hospitalisation" },
+          { "label": "Urgences", "slug": "/mon-sejour/urgences" },
+          { "label": "Préparer mon séjour", "slug": "/mon-sejour/preparer" },
+          { "label": "Mon admission", "slug": "/mon-sejour/admission" },
+          { "label": "Nos services", "slug": "/mon-sejour/services" },
+          { "label": "Ma sortie", "slug": "/mon-sejour/sortie" }
+        ]
+      },
+      {
+        "label": "RAAC",
+        "slug": "/raac",
+        "children": []
+      },
+      {
+        "label": "Infos pratiques",
+        "slug": "/infos-pratiques",
+        "children": []
+      }
+    ],
+    "cta": {
+      "label": "Urgences",
+      "href": "tel:0559517400"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "Nous sommes là pour votre bien-être.",
+      "rotator": ["vous accueillir.", "vous soigner.", "vous accompagner."]
+    },
+    "shortcuts": [
+      { "label": "Votre parcours", "href": "/mon-sejour/parcours" },
+      { "label": "Démarche qualité et sécurité des soins", "href": "/la-polyclinique/demarche-qualite" },
+      { "label": "Recrutement", "href": "/recrutement" },
+      { "label": "Programme RAAC", "href": "/raac" }
+    ]
+  },
+
+  "footer": {
+    "columns": [
+      {
+        "title": "Nos services",
+        "links": [
+          { "label": "Mon Séjour", "href": "/mon-sejour" },
+          { "label": "Nos Spécialistes", "href": "/nos-specialistes" },
+          { "label": "Notre Démarche Qualité", "href": "/la-polyclinique/demarche-qualite" },
+          { "label": "Notre établissement", "href": "/la-polyclinique" }
+        ]
+      },
+      {
+        "title": "Nous contacter",
+        "items": [
+          { "type": "phone", "label": "Standard", "value": "05 59 51 63 63", "href": "tel:0559516363" },
+          { "type": "address", "value": "7 Rue Leonce Goyetche, 64500 Saint-Jean-de-Luz" }
+        ]
+      },
+      {
+        "title": "Suivez notre actualité",
+        "social": [
+          { "name": "Facebook", "href": "https://www.facebook.com" },
+          { "name": "Instagram", "href": "https://www.instagram.com" },
+          { "name": "LinkedIn", "href": "https://www.linkedin.com" }
+        ],
+        "more": { "label": "Découvrez nos actualités", "href": "/actualites" }
+      }
+    ],
+    "bottomBanner": {
+      "lines": [
+        "Urgences 05 59 51 74 00 — Gratuit depuis un poste fixe",
+        "Adresse : 7 Rue Leonce Goyetche, 64500 Saint-Jean-de-Luz",
+        "Contact 05 59 51 63 63 — Gratuit depuis un poste fixe"
+      ]
+    },
+    "legal": {
+      "copyright": "© Jérôme DEFOSSE",
+      "links": [
+        { "label": "Mentions légales", "href": "/mentions-legales" },
+        { "label": "Politique de confidentialité", "href": "/confidentialite" }
+      ]
+    }
+  }
+}
