@@ -1,74 +1,49 @@
-# Content Ops Starter
+# RAAC PROMs – Polyclinique Côte Basque Sud
 
-![Content Ops Starter](https://assets.stackbit.com/docs/content-ops-starter-thumb.png)
+Suivi des patients RAAC (Oxford, WOMAC, Douleur VAS, Qualité de vie VAS, Satisfaction /10) avec rappels e‑mail, portails patient/médecin, export CSV/ZIP par chirurgien et synchronisation mensuelle de l'annuaire.
 
-Netlify starter that's made for customization with a flexible content model, component library, [visual editing](https://docs.netlify.com/visual-editor/overview/) and [Git Content Source](https://docs.netlify.com/create/content-sources/git/).
+## Déploiement Netlify
 
-**⚡ View demo:** [https://content-ops-starter.netlify.app/](https://content-ops-starter.netlify.app/)
+1. **Variables d'environnement** (`.env` ou panneau Netlify):
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=https://...supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=
+   SUPABASE_SERVICE_ROLE=
+   NEXT_PUBLIC_SITE_URL=https://raac-ortho-pcbs.netlify.app
+   NEXT_PUBLIC_FUNCTIONS_BASE=/.netlify/functions
+   RESEND_API_KEY=
+   MAIL_FROM="RAAC PCBS <noreply@pcbs.fr>"
+   TIMEZONE=Europe/Paris
+   SURGEON_DIRECTORY_URL=https://polyclinique-cotebasquesud.fr/annuaire/
+   ```
+2. **Build**
+   - `node scripts/verify-env.mjs && npm run build`
+4. **Développement local**
+   - `npm run dev`
+3. **Fonctions planifiées** (déjà déclarées dans `netlify.toml`)
+   - `send-reminders` : `0 5 * * *`
+   - `surgeon-sync` : `0 2 1 * *`
 
-## Table of Contents
+## Scripts
 
-- [Deploying to Netlify](#deploying-to-netlify)
-- [Develop with Netlify Visual Editor Locally](#develop-with-netlify-visual-editor-locally)
-- [Building for production](#building-for-production)
-- [Setting Up Algolia Search](#setting-up-algolia-search)
-- [Next Steps](#next-steps)
-- [Support](#support)
+- `scripts/verify-env.mjs` → stoppe le build si des variables critiques manquent.
 
-## Deploying to Netlify
+## Export par chirurgien
 
-If you click "Deploy to Netlify" button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/content-ops-starter)
-
-## Develop with Netlify Visual Editor Locally
-
-The typical development process is to begin by working locally. Clone this repository, then run `npm install` in its root directory.
-
-Run the Next.js development server:
-
-```txt
-cd content-ops-starter
-npm run dev
 ```
-
-Install the [Netlify Visual Editor CLI](https://www.npmjs.com/package/@stackbit/cli). Then open a new terminal window in the same project directory and run the Netlify visual editor dev server:
-
-```txt
-npm install -g @stackbit/cli
-stackbit dev
+GET /.netlify/functions/export-by-surgeon
 ```
+Retourne une archive ZIP contenant un CSV par chirurgien :
+`patient_id,patient_email,surgeon,timepoint,created_at,oxford_total,oxford_q1..12,womac_total,womac_pain,womac_stiffness,womac_function,womac_q1..24,qol_vas,pain_vas,satisfaction,extra`
 
-This outputs your own Netlify visual editor URL. Open this, register, or sign in, and you will be directed to Netlify's visual editor for your new project.
+*Satisfaction est notée sur 10 : 0 = très insatisfait, 10 = très satisfait.*
 
-![Next.js Dev + Visual Editor Dev](https://assets.stackbit.com/docs/next-dev-stackbit-dev.png)
+## Portails
 
-## Building for production
+- `/portal/patient?patient_id=...&token=...`
+- `/portal/medecin` (auth Supabase)
+- `/portal/admin`
 
-To build a static site for production, run the following command
+## Licence
 
-```shell
-npm run build
-```
-
-## Setting Up Algolia Search
-
-This starter includes Algolia search integration. To set it up:
-
-1. Create an [Algolia](https://www.algolia.com/) account
-2. Create a new application and index
-3. Set the following environment variables:
-   - `NEXT_PUBLIC_ALGOLIA_APP_ID` - Your Algolia application ID
-   - `NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY` - Your Algolia search-only API key
-   - `NEXT_PUBLIC_ALGOLIA_INDEX_NAME` - Your index name
-
-## Next Steps
-
-Here are a few suggestions on what to do next if you're new to Netlify visual editor:
-
-- Learn [Netlify visual editor overview](https://docs.netlify.com/visual-editor/visual-editing/)
-- Check [Netlify visual editor reference documentation](https://visual-editor-reference.netlify.com/)
-
-## Support
-
-If you get stuck along the way, get help in our [support forums](https://answers.netlify.com/).
+MIT
