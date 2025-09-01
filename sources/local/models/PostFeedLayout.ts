@@ -52,16 +52,6 @@ export const PostFeedLayout: Model = {
             subtype: 'int'
         },
         {
-            type: 'boolean',
-            name: 'enableSearch',
-            label: 'Enable search',
-            description: 'The built-in search works with a third party service. Learn how to configure it.',
-            required: false,
-            default: true,
-            hidden: false,
-            localized: false
-        },
-        {
             type: 'list',
             name: 'topSections',
             label: 'Top sections',
