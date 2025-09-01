@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
+import { calculateQuestionnaireScore } from '../../../utils/calculate-questionnaire-score';
 
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
@@ -18,7 +19,8 @@ export default function FormBlock(props) {
 
         const data = new FormData(formRef.current);
         const value = Object.fromEntries(data.entries());
-        alert(`Form data: ${JSON.stringify(value)}`);
+        const score = calculateQuestionnaireScore(value);
+        alert(`Form data: ${JSON.stringify(value)}\nScore: ${score}`);
     }
 
     return (
@@ -43,7 +45,7 @@ export default function FormBlock(props) {
             id={elementId}
             onSubmit={handleSubmit}
             ref={formRef}
-            data-sb-field-path= {fieldPath}
+            data-sb-field-path={fieldPath}
         >
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
