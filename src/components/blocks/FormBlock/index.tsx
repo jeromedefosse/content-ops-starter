@@ -4,10 +4,18 @@ import classNames from 'classnames';
 import { getComponent } from '../../components-registry';
 import { mapStylesToClassNames as mapStyles } from '../../../utils/map-styles-to-class-names';
 import SubmitButtonFormControl from './SubmitButtonFormControl';
+import { calculateQuestionnaireScore } from '../../../utils/calculate-questionnaire-score';
 
 export default function FormBlock(props) {
     const formRef = React.createRef<HTMLFormElement>();
     const { fields = [], elementId, submitButton, className, styles = {}, 'data-sb-field-path': fieldPath } = props;
+    const [results, setResults] = React.useState<
+        | {
+              items: { label: string; value: FormDataEntryValue }[];
+              score: number;
+          }
+        | null
+    >(null);
 
     if (fields.length === 0) {
         return null;
@@ -17,8 +25,12 @@ export default function FormBlock(props) {
         event.preventDefault();
 
         const data = new FormData(formRef.current);
-        const value = Object.fromEntries(data.entries());
-        alert(`Form data: ${JSON.stringify(value)}`);
+        const values = Object.fromEntries(data.entries());
+        const items = fields
+            .filter((field) => field.name && values[field.name] !== undefined)
+            .map((field) => ({ label: field.label || field.name, value: values[field.name] }));
+        const score = calculateQuestionnaireScore(values);
+        setResults({ items, score });
     }
 
     return (
@@ -43,7 +55,7 @@ export default function FormBlock(props) {
             id={elementId}
             onSubmit={handleSubmit}
             ref={formRef}
-            data-sb-field-path= {fieldPath}
+            data-sb-field-path={fieldPath}
         >
             <div
                 className={classNames('w-full', 'flex', 'flex-wrap', 'gap-8', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
@@ -65,6 +77,24 @@ export default function FormBlock(props) {
             {submitButton && (
                 <div className={classNames('mt-8', 'flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}>
                     <SubmitButtonFormControl {...submitButton} {...(fieldPath && { 'data-sb-field-path': '.submitButton' })} />
+                </div>
+            )}
+            {results && (
+                <div className="mt-8 w-full" data-sb-field-path={fieldPath ? `${fieldPath}.results` : undefined}>
+                    <table className="min-w-full border-collapse">
+                        <tbody>
+                            {results.items.map((item) => (
+                                <tr key={item.label} className="border-t">
+                                    <th className="p-2 text-left">{item.label}</th>
+                                    <td className="p-2">{String(item.value)}</td>
+                                </tr>
+                            ))}
+                            <tr className="border-t font-semibold">
+                                <th className="p-2 text-left">Score</th>
+                                <td className="p-2">{results.score}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             )}
         </form>
